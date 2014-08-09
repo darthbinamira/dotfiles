@@ -14,6 +14,7 @@ HIST_STAMPS="mm/dd/yyyy"
 plugins=(git tmux docker)
 
 ZSH_TMUX_AUTOSTART="true"
+ZSH_TMUX_FIXTERM_WITH_256COLOR="true"
 
 export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/opt/peco_linux_amd64:/opt/go/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -23,7 +24,7 @@ export GOPATH="/home/spekkio/gocode"
 
 source $ZSH/oh-my-zsh.sh
 
-export LANG=en_US.UTF-8
+#export LANG=en_US.UTF-8
 export EDITOR='vim'
 
 HISTFILE=~/.histfile
