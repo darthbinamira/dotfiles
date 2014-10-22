@@ -14,13 +14,14 @@ HIST_STAMPS="mm/dd/yyyy"
 plugins=(git tmux docker)
 
 # Some issue with the plugin's autostart feature. Disabling for now.
-#ZSH_TMUX_AUTOSTART="true"
+ZSH_TMUX_AUTOSTART="true"
 #ZSH_TMUX_FIXTERM_WITH_256COLOR="true"
 
-export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/opt/peco_linux_amd64:/opt/go/bin"
+export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/opt/peco_linux_amd64:/opt/go/bin:/usr/lib/jvm/java-7-oracle/bin:/usr/lib/jvm/java-7-oracle/db/bin:/usr/lib/jvm/java-7-oracle/jre/bin:/home/darth/engageSPARK/dev/android-sdk-linux/tools:/home/darth/engageSPARK/dev/android-sdk-linux/platform-tools"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 export GOPATH="/home/spekkio/dev/gocode"
+export ANDROID_HOME=/home/darth/engageSPARK/dev/android-sdk-linux/
 
 source $ZSH/oh-my-zsh.sh
 
@@ -36,3 +37,4 @@ SAVEHIST=10000
 setopt appendhistory autocd extendedglob
 bindkey -v
 bindkey '^R' history-incremental-search-backward
+
