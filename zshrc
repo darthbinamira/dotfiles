@@ -38,3 +38,30 @@ setopt appendhistory autocd extendedglob
 bindkey -v
 bindkey '^R' history-incremental-search-backward
 
+docker_rm()
+{
+	IDS=$(docker ps -a | grep Exited)
+	if [[ -z $IDS ]]; then
+		echo "No 'Exited' Docker containers to remove."
+	else
+		echo "Removing Docker containers..."
+		docker rm $(docker ps -a | grep Exited | awk '{print $1}')
+		echo "Done."
+	fi
+}
+
+docker_rmi()
+{
+	IDS=$(docker images | grep none)
+	if [[ -z $IDS ]]; then
+		echo "No <none> Docker images to remove."
+	else
+		echo "Removing Docker images..."
+		docker rmi $(docker images | grep none | awk '{print $3}')
+		echo "Done."
+	fi
+
+}
+
+alias drm=docker_rm
+alias drmi=docker_rmi
