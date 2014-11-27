@@ -1,3 +1,5 @@
 [user]
 	email = dummymael@gmail.com
 	name = Darth Binamira
+[core]
+	editor = /usr/bin/vim

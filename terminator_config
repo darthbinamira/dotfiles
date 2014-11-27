@@ -5,9 +5,6 @@
   borderless = True
   tab_position = "hidden"
   
-[keybindings]
-  full_screen = <Ctrl><Shift>F11
-
 [profiles]
   [[default]]
     # solarized-dark
@@ -18,7 +15,7 @@
 
     use_system_font = False
     font = "Mono 10"
-    scrollbar_position = "Disabled"
+    scrollbar_position = "disabled"
     show_titlebar = False
     
     background_darkness = 0.75
