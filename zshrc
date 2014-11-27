@@ -11,7 +11,7 @@ DISABLE_AUTO_TITLE="true"
 #DISABLE_UNTRACKED_FILES_DIRTY="true"
 HIST_STAMPS="mm/dd/yyyy"
 
-plugins=(git tmux docker)
+plugins=(git tmux docker last-working-dir)
 
 # Some issue with the plugin's autostart feature. Disabling for now.
 ZSH_TMUX_AUTOSTART="true"

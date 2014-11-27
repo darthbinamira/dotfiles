@@ -1,10 +1,14 @@
 BASEDIR=$(pwd)
 
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 36A1D7869245C8950F966E92D8576A8BA88D21E9
+sudo sh -c "echo deb https://get.docker.com/ubuntu docker main > /etc/apt/sources.list.d/docker.list"
+
 sudo add-apt-repository ppa:gnome-terminator
 sudo add-apt-repository ppa:pi-rho/dev
 
 sudo apt-get update
-sudo apt-get install -y git vim zsh curl terminator gnome-panel tmux
+sudo apt-get install -y git vim zsh curl terminator gnome-panel tmux python-pip lxc-docker
+sudo pip install -U fig
 
 # setup ohmyzsh
 curl -L http://install.ohmyz.sh | sh
