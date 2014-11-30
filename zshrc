@@ -45,7 +45,7 @@ docker_rm()
 		echo "No 'Exited' Docker containers to remove."
 	else
 		echo "Removing Docker containers..."
-		docker rm $(docker ps -a | grep Exited | awk '{print $1}')
+		docker rm -v $(docker ps -a | grep Exited | awk '{print $1}')
 		echo "Done."
 	fi
 }

@@ -7,7 +7,7 @@ sudo add-apt-repository ppa:gnome-terminator
 sudo add-apt-repository ppa:pi-rho/dev
 
 sudo apt-get update
-sudo apt-get install -y git vim zsh curl terminator gnome-panel tmux python-pip lxc-docker
+sudo apt-get install -y git vim zsh curl wget tree terminator gnome-panel tmux python-pip lxc-docker
 sudo pip install -U fig
 
 # setup ohmyzsh
