@@ -3,3 +3,5 @@
 	name = Darth Binamira
 [core]
 	editor = /usr/bin/vim
+[push]
+	default = simple
