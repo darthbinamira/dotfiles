@@ -13,7 +13,6 @@ HIST_STAMPS="mm/dd/yyyy"
 
 plugins=(git tmux docker last-working-dir)
 
-# Some issue with the plugin's autostart feature. Disabling for now.
 ZSH_TMUX_AUTOSTART="true"
 #ZSH_TMUX_FIXTERM_WITH_256COLOR="true"
 
@@ -22,6 +21,8 @@ export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/g
 
 export GOPATH="/home/spekkio/dev/gocode"
 export ANDROID_HOME=/home/darth/engageSPARK/dev/android-sdk-linux/
+export NVM_DIR="/home/spekkio/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
 
 source $ZSH/oh-my-zsh.sh
 

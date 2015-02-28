@@ -4,8 +4,13 @@ sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 36A1D7869
 sudo sh -c "echo deb https://get.docker.com/ubuntu docker main > /etc/apt/sources.list.d/docker.list"
 
 sudo apt-get update
-sudo apt-get install -y git vim zsh curl wget tree terminator gnome-panel tmux python-pip lxc-docker
-sudo pip install -U fig
+sudo apt-get install -y git vim zsh curl wget tree terminator gnome-panel tmux python-pip lxc-docker build-essential libssl-dev
+sudo pip install -U docker-compose
+
+# install NodeJS version manager
+curl https://raw.githubusercontent.com/creationix/nvm/v0.23.3/install.sh | sh -
+nvm install stable
+nvm use stable
 
 # setup ohmyzsh
 curl -L http://install.ohmyz.sh | sh
