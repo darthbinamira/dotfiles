@@ -19,9 +19,9 @@ ZSH_TMUX_AUTOSTART="true"
 export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/opt/peco_linux_amd64:/opt/go/bin:/usr/lib/jvm/java-7-oracle/bin:/usr/lib/jvm/java-7-oracle/db/bin:/usr/lib/jvm/java-7-oracle/jre/bin:/home/darth/engageSPARK/dev/android-sdk-linux/tools:/home/darth/engageSPARK/dev/android-sdk-linux/platform-tools:/home/darth/.vim/bundle/vim-go"
 # export MANPATH="/usr/local/man:$MANPATH"
 
-export GOPATH="/home/spekkio/dev/gocode"
+export GOPATH="$HOME/dev/gocode"
 export ANDROID_HOME=/home/darth/engageSPARK/dev/android-sdk-linux/
-export NVM_DIR="/home/spekkio/.nvm"
+export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
 
 source $ZSH/oh-my-zsh.sh
