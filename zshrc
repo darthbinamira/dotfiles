@@ -16,7 +16,7 @@ plugins=(git tmux docker last-working-dir)
 ZSH_TMUX_AUTOSTART="true"
 #ZSH_TMUX_FIXTERM_WITH_256COLOR="true"
 
-export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/opt/peco_linux_amd64:/opt/go/bin:/usr/lib/jvm/java-7-oracle/bin:/usr/lib/jvm/java-7-oracle/db/bin:/usr/lib/jvm/java-7-oracle/jre/bin:/home/darth/engageSPARK/dev/android-sdk-linux/tools:/home/darth/engageSPARK/dev/android-sdk-linux/platform-tools"
+export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/opt/peco_linux_amd64:/opt/go/bin:/usr/lib/jvm/java-7-oracle/bin:/usr/lib/jvm/java-7-oracle/db/bin:/usr/lib/jvm/java-7-oracle/jre/bin:/home/darth/engageSPARK/dev/android-sdk-linux/tools:/home/darth/engageSPARK/dev/android-sdk-linux/platform-tools:/home/darth/.vim/bundle/vim-go"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 export GOPATH="/home/spekkio/dev/gocode"
@@ -31,6 +31,9 @@ export EDITOR='vim'
 export LC_ALL=en_US.utf8
 export LANG=en_US.utf8
 export LANGUAGE=en_US.utf8
+
+export DEBFULLNAME="Darth"
+export DEBEMAIL="dummymael+launchpad@gmail.com"
 
 HISTFILE=~/.histfile
 HISTSIZE=10000
