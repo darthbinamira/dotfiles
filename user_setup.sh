@@ -1,16 +1,6 @@
+#!/bin/sh
+
 BASEDIR=$(pwd)
-
-sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 36A1D7869245C8950F966E92D8576A8BA88D21E9
-sudo sh -c "echo deb https://get.docker.com/ubuntu docker main > /etc/apt/sources.list.d/docker.list"
-
-sudo apt-get update
-sudo apt-get install -y git vim zsh curl wget tree terminator gnome-panel tmux python-pip lxc-docker build-essential libssl-dev
-sudo pip install -U docker-compose
-
-# install NodeJS version manager
-curl https://raw.githubusercontent.com/creationix/nvm/v0.23.3/install.sh | sh -
-nvm install stable
-nvm use stable
 
 # setup ohmyzsh
 curl -L http://install.ohmyz.sh | sh
@@ -44,7 +34,4 @@ mkdir -p ~/.config/terminator
 ln -s $BASEDIR/terminator_config ~/.config/terminator/config
 rm ~/.gitconfig
 ln -s $BASEDIR/gitconfig_global ~/.gitconfig
-
-# setup git commit editor
-git config --global core.editor `which vim`
 
