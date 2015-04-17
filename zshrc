@@ -13,7 +13,7 @@ HIST_STAMPS="mm/dd/yyyy"
 
 plugins=(git tmux docker golang last-working-dir)
 
-ZSH_TMUX_AUTOSTART="true"
+ZSH_TMUX_AUTOSTART="false"
 ZSH_TMUX_FIXTERM_WITH_256COLOR="true"
 
 export GOROOT="$HOME/Development/toolchain/go"

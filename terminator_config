@@ -3,7 +3,7 @@
   focus = system
   window_state = "maximise"
   borderless = True
-  tab_position = "hidden"
+  #tab_position = "hidden"
   
 [profiles]
   [[default]]
