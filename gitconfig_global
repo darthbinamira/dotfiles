@@ -7,3 +7,5 @@
 	default = simple
 [alias]
 	st = status
+	co = checkout
+	rs = reset
