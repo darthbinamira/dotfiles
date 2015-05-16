@@ -6,23 +6,29 @@ CASE_SENSITIVE="false"
 DISABLE_AUTO_UPDATE="false"
 DISABLE_LS_COLORS="false"
 DISABLE_AUTO_TITLE="true"
-ENABLE_CORRECTION="true"
+ENABLE_CORRECTION="false"
 COMPLETION_WAITING_DOTS="false"
 DISABLE_UNTRACKED_FILES_DIRTY="false"
 HIST_STAMPS="mm/dd/yyyy"
 
-plugins=(git tmux docker golang last-working-dir)
+plugins=(git tmux docker golang mvn pip virtualenvwrapper last-working-dir)
 
 ZSH_TMUX_AUTOSTART="false"
 ZSH_TMUX_FIXTERM_WITH_256COLOR="true"
 
 export GOROOT="$HOME/Development/toolchain/go"
-
-PATH="$PATH:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
-PATH="$PATH:$GOROOT/bin"
-# export MANPATH="/usr/local/man:$MANPATH"
+export JAVA_HOME="$HOME/Development/toolchain/java"
+export MAVEN_HOME="$HOME/Development/toolchain/maven"
+export GRADLE_HOME="$HOME/Development/toolchain/gradle"
+export IDEA_HOME="$HOME/Development/toolchain/idea"
+PATH="$PATH:$GOROOT/bin:$JAVA_HOME/bin:$MAVEN_HOME/bin:$GRADLE_HOME/bin:$IDEA_HOME/bin"
 
 source $ZSH/oh-my-zsh.sh
+
+export WORKON_HOME="$HOME/.virtualenvs"
+export PROJECT_HOME="$HOME/Development/code/github.com/dummymael"
+export VIRTUALENVWRAPPER_SCRIPT="/usr/local/bin/virtualenvwrapper.sh"
+source /usr/local/bin/virtualenvwrapper_lazy.sh
 
 # misc
 export EDITOR='vim'

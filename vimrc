@@ -19,3 +19,9 @@ set softtabstop=0
 set shiftwidth=4
 set tabstop=4
 
+noremap <Up> <Nop>
+noremap <Down> <Nop>
+noremap <Left> <Nop>
+noremap <Right> <Nop>
+
+autocmd Filetype python setlocal expandtab tabstop=4 shiftwidth=4 smarttab softtabstop=4 autoindent
