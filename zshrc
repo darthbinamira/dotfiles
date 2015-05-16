@@ -28,6 +28,7 @@ source $ZSH/oh-my-zsh.sh
 export WORKON_HOME="$HOME/.virtualenvs"
 export PROJECT_HOME="$HOME/Development/code/github.com/dummymael"
 export VIRTUALENVWRAPPER_SCRIPT="/usr/local/bin/virtualenvwrapper.sh"
+export VIRTUAL_ENV_DISABLE_PROMPT="true"
 source /usr/local/bin/virtualenvwrapper_lazy.sh
 
 # misc
