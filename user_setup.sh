@@ -35,3 +35,6 @@ ln -s $BASEDIR/terminator_config ~/.config/terminator/config
 rm ~/.gitconfig
 ln -s $BASEDIR/gitconfig_global ~/.gitconfig
 
+cd ~/.oh-my-zsh/themes
+git apply pygmalion_mod_virtualenv.patch
+
