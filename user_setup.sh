@@ -2,8 +2,11 @@
 
 BASEDIR=$(pwd)
 
-# setup ohmyzsh
-curl -L http://install.ohmyz.sh | sh
+# setup oh-my-zsh
+# setting user shell to zsh fails when doing a curl + pipe as discussed here:
+# https://github.com/robbyrussell/oh-my-zsh/issues/3516
+sh -c "$(curl -fsSL http://install.ohmyz.sh)"
+# curl -L http://install.ohmyz.sh | sh
 # or wget --no-check-certificate http://install.ohmyz.sh -O - | sh
 
 # setup vim-pathogen
