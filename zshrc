@@ -31,7 +31,8 @@ export VIRTUALENVWRAPPER_SCRIPT="/usr/local/bin/virtualenvwrapper.sh"
 export VIRTUAL_ENV_DISABLE_PROMPT="true"
 source /usr/local/bin/virtualenvwrapper_lazy.sh
 
-export BLOG_HOME="$HOME/Development/github.com/dummymael/darthbinamira.com"
+export BLOG_HOME="$HOME/Blogs"
+export BLOG_DB="$BLOG_HOME/darthbinamira.com"
 
 # misc
 export EDITOR='vim'
@@ -80,4 +81,4 @@ docker_rmi()
 
 alias drm=docker_rm
 alias drmi=docker_rmi
-alias jekyll="docker run --rm -it --volume=$BLOG_HOME:/srv/jekyll -p 4000:4000 jekyll_s3:1.2 jekyll s"
+alias jekyll_db="docker run --rm -it --volume=$BLOG_DB:/srv/jekyll -p 4000:4000 jekyll_s3:1.2 jekyll s"
