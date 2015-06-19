@@ -81,4 +81,5 @@ docker_rmi()
 
 alias drm=docker_rm
 alias drmi=docker_rmi
-alias jekyll_db="docker run --rm -it --volume=$BLOG_DB:/srv/jekyll -p 4000:4000 jekyll_s3:1.2 jekyll s"
+alias jekyll_db="docker run --rm --name="jekyll_db" -it --volume=$BLOG_DB:/srv/jekyll -p 4000:4000 jekyll_s3:1.2 jekyll s"
+alias jekyll_db_shell="docker exec -it jekyll_db bash"
