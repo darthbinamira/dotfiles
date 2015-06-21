@@ -79,7 +79,24 @@ docker_rmi()
 
 }
 
+git_fr_all()
+{
+	curr=`pwd`
+	for dir in $(ls); do
+		if [[ -d "$dir/.git" ]]; then
+			echo "Checking $dir"
+			cd $dir
+			git fetch
+			git rebase
+			git st
+			cd $curr
+			echo
+		fi
+	done
+}
+
 alias drm=docker_rm
 alias drmi=docker_rmi
 alias jekyll_db="docker run --rm --name="jekyll_db" -it --volume=$BLOG_DB:/srv/jekyll -p 4000:4000 jekyll_s3:1.3 jekyll s -w"
 alias jekyll_db_shell="docker exec -it jekyll_db bash"
+alias git_fr_all=git_fr_all
