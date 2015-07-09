@@ -33,6 +33,7 @@ ln -s $BASEDIR/tmux.conf ~/.tmux.conf
 ln -s $BASEDIR/vimrc ~/.vimrc
 rm ~/.zshrc
 ln -s $BASEDIR/zshrc ~/.zshrc
+ln -s $BASEDIR/curlrc ~/.curlrc
 mkdir -p ~/.config/terminator
 ln -s $BASEDIR/terminator_config ~/.config/terminator/config
 rm ~/.gitconfig
