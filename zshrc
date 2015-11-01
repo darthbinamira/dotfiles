@@ -20,8 +20,10 @@ export GOROOT="$HOME/Development/toolchain/go"
 export JAVA_HOME="$HOME/Development/toolchain/java"
 export MAVEN_HOME="$HOME/Development/toolchain/maven"
 export GRADLE_HOME="$HOME/Development/toolchain/gradle"
+export SBT_HOME="$HOME/Development/toolchain/sbt"
 export IDEA_HOME="$HOME/Development/toolchain/idea"
-PATH="$PATH:$GOROOT/bin:$JAVA_HOME/bin:$MAVEN_HOME/bin:$GRADLE_HOME/bin:$IDEA_HOME/bin"
+export ANDROID_STUDIO_HOME="$HOME/Development/ide/android-studio"
+PATH="$PATH:$GOROOT/bin:$JAVA_HOME/bin:$MAVEN_HOME/bin:$GRADLE_HOME/bin:$SBT_HOME/bin:$IDEA_HOME/bin:$ANDROID_STUDIO_HOME/bin"
 
 source $ZSH/oh-my-zsh.sh
 
