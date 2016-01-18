@@ -17,13 +17,14 @@ ZSH_TMUX_AUTOSTART="false"
 ZSH_TMUX_FIXTERM_WITH_256COLOR="true"
 
 export GOROOT="$HOME/Development/toolchain/go"
+export SWIFT_HOME="$HOME/Development/toolchain/swift"
 export JAVA_HOME="$HOME/Development/toolchain/java"
 export MAVEN_HOME="$HOME/Development/toolchain/maven"
 export GRADLE_HOME="$HOME/Development/toolchain/gradle"
 export SBT_HOME="$HOME/Development/toolchain/sbt"
 export IDEA_HOME="$HOME/Development/toolchain/idea"
 export ANDROID_STUDIO_HOME="$HOME/Development/ide/android-studio"
-PATH="$PATH:$GOROOT/bin:$JAVA_HOME/bin:$MAVEN_HOME/bin:$GRADLE_HOME/bin:$SBT_HOME/bin:$IDEA_HOME/bin:$ANDROID_STUDIO_HOME/bin"
+PATH="$PATH:$GOROOT/bin:$SWIFT_HOME/usr/bin:$JAVA_HOME/bin:$MAVEN_HOME/bin:$GRADLE_HOME/bin:$SBT_HOME/bin:$IDEA_HOME/bin:$ANDROID_STUDIO_HOME/bin"
 
 source $ZSH/oh-my-zsh.sh
 
@@ -99,6 +100,6 @@ git_fr_all()
 
 alias drm=docker_rm
 alias drmi=docker_rmi
-alias jekyll_db="docker run --rm --name="jekyll_db" -it --volume=$BLOG_DB:/srv/jekyll -p 4000:4000 jekyll_s3:1.3 jekyll s -w"
-alias jekyll_db_shell="docker exec -it jekyll_db bash"
+alias jekyll_db="docker run --rm --name="jekyll_db" -it --volume=$BLOG_DB:/srv/jekyll -p 4000:4000 jekyll_octopress_s3:1.0 jekyll s -w"
+alias jekyll_db_shell="docker exec -it jekyll_db /bin/sh"
 alias git_fr_all=git_fr_all
