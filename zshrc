@@ -11,7 +11,7 @@ COMPLETION_WAITING_DOTS="false"
 DISABLE_UNTRACKED_FILES_DIRTY="false"
 HIST_STAMPS="mm/dd/yyyy"
 
-plugins=(git tmux docker mvn gradle pip last-working-dir)
+plugins=(git tmux docker mvn gradle pip command-not-found)
 
 ZSH_TMUX_AUTOSTART="true"
 ZSH_TMUX_AUTOQUIT="false"
