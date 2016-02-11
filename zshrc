@@ -104,7 +104,8 @@ git_fr_all()
 
 alias drm=docker_rm
 alias drmi=docker_rmi
-alias jekyll_db="docker run --rm --name="jekyll_db" -it --volume=$BLOG_DB:/srv/jekyll -p 4000:4000 jekyll_octopress_s3:1.0 jekyll s -w"
-alias jekyll_db_shell="docker exec -it jekyll_db /bin/sh"
 alias git_fr_all=git_fr_all
+
+alias blog_db="docker run --rm --name="blog_db" -it --volume=$BLOG_DB:/srv/jekyll -p 4000:4000 jekyll_octopress_s3:1.1 jekyll s -w"
+alias blog_db_shell="docker exec -it blog_db /bin/sh"
 
