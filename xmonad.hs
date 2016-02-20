@@ -3,7 +3,6 @@ import XMonad.Hooks.ManageDocks
 import XMonad.Util.Run(spawnPipe)
 
 main = do
-	xmproc <- spawnPipe "xmobar"
 	xmonad defaults {
 		manageHook = manageDocks <+> manageHook defaultConfig
 		, layoutHook = avoidStruts $ layoutHook defaultConfig

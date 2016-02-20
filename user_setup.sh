@@ -42,7 +42,6 @@ rm ~/.gitconfig
 ln -s $BASEDIR/gitconfig_global ~/.gitconfig
 mkdir -p ~/.xmonad
 ln -s $BASEDIR/xmonad.hs ~/.xmonad/xmonad.hs
-ln -s $BASEDIR/xmobarrc ~/.xmobarrc
 
 cd ~/.oh-my-zsh/themes
 git apply pygmalion_mod_virtualenv.patch

@@ -28,7 +28,9 @@ apt-get install -y \
 	bridge-utils \
 	virt-viewer \
 	python-pygame \
-	openssh-server
+	openssh-server \
+	xmonad \
+	suckless-tools
 
 wget https://bootstrap.pypa.io/get-pip.py -O - | python
 pip install -U docker-compose
