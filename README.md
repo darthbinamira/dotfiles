@@ -3,7 +3,7 @@ dotfiles
 
 For instructions for setting up VMWare resolution, go here: https://sammart.in/2012/05/29/enabling-resolutions-in-ubuntu-12-04-lubuntu-12-04/
 
-In case the link goes kapoot, steps are reproduced as below:
+In case the link goes kapoot, steps are reproduced below:
 
 1. $ gtf 1920 1080 60 | grep Modeline
 2. $ xrandr | grep -w connected | awk '{print $1}'
@@ -28,11 +28,9 @@ EndSection
 
 where
 
-	MODELINE is the whole line from step 1.
-
-	DEVICE is the output of step 2.
-
-	MODENAME is the 2nd word from step 1.
+MODELINE is the whole line from step 1.  
+DEVICE is the output of step 2.  
+MODENAME is the 2nd word from step 1.  
 
 And finally, reboot!
 
